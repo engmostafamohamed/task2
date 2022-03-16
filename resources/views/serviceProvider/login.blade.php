@@ -27,7 +27,7 @@
             <div class="card-body">
                 <p class="login-box-msg">تسجيل دخول</p>
 
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('alogin') }}">
                     @csrf
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email" name='email'

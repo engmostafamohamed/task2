@@ -9,7 +9,7 @@ class serviceProviderController extends Controller
     //
     public function check()
     {
-        return view('admin.login');
+        return view('serviceProvider.login');
     }
 
     public function login(Request $request)
