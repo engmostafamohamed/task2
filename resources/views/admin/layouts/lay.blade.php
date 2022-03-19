@@ -88,15 +88,15 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="" class="nav-link ">
+                                    <a href="{{route('offers.index')}}" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>الطلبات</p>
+                                        <p>العروض</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link ">
+                                    <a href="{{route('offers.create')}}" class="nav-link ">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>الطلبات الموافق عليها</p>
+                                        <p>أضافة عرض</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">

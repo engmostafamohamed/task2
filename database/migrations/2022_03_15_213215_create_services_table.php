@@ -20,6 +20,8 @@ class CreateServicesTable extends Migration
             $table->string('place');
             $table->string('discription');
             $table->integer('price');
+            $table->string('image');
+            $table->string('creator')->nullable();
         });
     }
 

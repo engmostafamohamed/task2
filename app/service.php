@@ -6,7 +6,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class service extends Authenticatable
 {
     use Notifiable;
 
@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'place', 'discription','price',
+        'name', 'place', 'discription','price', 'image' , 'creator'
     ];
     /**
      * The attributes that should be hidden for arrays.
@@ -24,7 +24,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-
+        'created_at' , 'updated_at'
     ];
     /**
      * The attributes that should be cast to native types.

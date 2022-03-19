@@ -26,6 +26,7 @@ use App\Http\Controllers\AdminController;
 Route::group(['prefix' => 'admin'], function () {
     Route::get('check', [adminController::class, 'check']);
     Route::any('login', [adminController::class, 'login'])->name('login');
+    Route::resource('offers', 'AdminServiceController');
     Route::group(['middleware' => 'admin'], function () {
         Route::get('/', function () {
             return 'admin';
