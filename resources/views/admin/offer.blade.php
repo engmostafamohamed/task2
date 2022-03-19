@@ -32,6 +32,8 @@
                                             <th>الوصف</th>
                                             <th>السعر</th>
                                             <th>أضافه صورة</th>
+                                            <th>حذف</th>
+                                            <th>تعديل</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -48,8 +50,13 @@
                                                             <form method="post" action="{{route('offers.destroy', $offer->id)}}" enctype="multipart/form-data">
                                                                 @csrf
                                                                 @method('DELETE')
-                                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                                                <button type="submit" class="btn btn-danger">حذف</button>
                                                             </form>
+                                                        </td>
+                                                        <td>
+                                                            <button type="submit"  class="btn btn-success">
+                                                                <a href="{{route('offers.edit',$offer->id)}}">تعديل</a>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                             @endforeach

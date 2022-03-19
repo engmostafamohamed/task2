@@ -72,6 +72,10 @@ class AdminServiceController extends Controller
     public function edit($id)
     {
         //
+        $offer=service::find($id);
+        return view('admin.editOffer',compact('offer'));
+
+
     }
 
     /**
@@ -83,7 +87,21 @@ class AdminServiceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+
+
+        $result = $request->except( 'image', '_token','_method');
+        if ($request->has('image')) {
+            $oldImage = DB::table('services')->select('image')->where('id', $id)->first()->image;
+            $this->deleteMedia($oldImage, 'offer');
+            $imageName = $this->uploadMedia($request->image, 'offer');
+            $result['image'] = $imageName;
+        }
+
+
+
+        DB::table('services')->where('id', $id)->update($result);
+        return redirect()->route('offers.index');
     }
 
     /**
@@ -92,10 +110,12 @@ class AdminServiceController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(service $id)
+    public function destroy($id)
     {
         //
-        $id->delete();
+        // $deleted = Flight::where('active', 0)->delete();
+
+        service::destroy($id);
         return redirect()->route('offers.index')->with('success',  'تم مسح العرض بنجاح  ');
 
     }
