@@ -65,7 +65,7 @@
             <a class="brand-link">
                 <img src="{{ url('assest/admin/dist/img/LOGO.png') }}" alt="AdminLTE Logo"
                     class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">SW GAMES</span>
+                <span class="brand-text font-weight-light">VIST KSA</span>
             </a>
 
             <!-- Sidebar -->
@@ -82,7 +82,7 @@
                             <a href="#" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    لوحة لتحكم
+                                    (الادمن)لوحه التحكم
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -99,112 +99,9 @@
                                         <p>أضافة عرض</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link ">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>الطلبات  المرفوضه</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link ">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>  الاكواد </p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link ">
-                                        <i class="fas fa-chart-bar"></i>
-                                        <p>الاحصائيات</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-users"></i>
-                                        <p> المستخدمين </p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-users"></i>
-                                        <p> متابعة طلبات ال api  </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="#" class="nav-link">
-                                <i class="fab fa-steam"></i>
-                                <p>
-                                    الالعاب
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-
-                                        <i class="fas fa-gamepad"></i>
-                                        <p>كل الالعاب</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-plus-circle"></i>
-                                        <p>اضافة لعبة</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-folder-open"></i>
-                                <p>
-                                    الخدمات
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-folder"></i>
-                                        <p>الخدمات</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-plus-square"></i>
-                                        <p>اضف خدمة</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-plus-square"></i>
-                                        <p>اضف كود</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item ">
-                            <a href="#" class="nav-link">
-                                <i class="fas fa-folder-open"></i>
-                                <p>
-                                    الدفعات
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link">
-                                        <i class="fas fa-folder"></i>
-                                        <p>التفاصيل</p>
-                                    </a>
-                                </li>
 
                             </ul>
                         </li>
-
-
                         <li class="nav-item">
                             <a href="{{ url('admin/logout') }}" class="nav-link">
                                 <i class="fas fa-sign-out-alt"></i>
@@ -232,11 +129,6 @@
             <!-- Control sidebar content goes here -->
         </aside>
         <!-- /.control-sidebar -->
-
-        <!-- Main Footer -->
-        <footer class="main-footer" style="text-align: center;">
-            جميع الحقوق محفوظة &copy; <strong><a href="#">ُELZERO</a></strong> 2022
-        </footer>
     </div>
     <!-- ./wrapper -->
 

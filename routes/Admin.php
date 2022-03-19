@@ -28,6 +28,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::any('login', [adminController::class, 'login'])->name('login');
     Route::group(['middleware' => 'admin'], function () {
         Route::resource('offers', 'AdminServiceController');
+        Route::get('logout', 'LogoutController@logout');
     });
 });
 
